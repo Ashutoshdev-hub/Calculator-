@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="calculator.js"></script>
+  </head>
+  <body>
+   <div class="container mt-[5rem]">
+    <h1 class="text-4xl font-bold text-center bg-gradient-to-l from-orange-500 via-green-500 to-blue-500 text-transparent bg-clip-text mb-9">Chai Aur Code Calculator</h1>
+    <div class="max-w-md mx-auto bg-gradient-to-bl from-[#ffe4e6]  to-[#ccfbf1] p-8 rounded-lg shadow-lg">
+        <div class="mb-4">
+                <input type="text" id="result" class="w-full p-2 border border-gray-300 rounded-md" readonly>
+            </div>
+            <div class="grid grid-cols-4 gap-2">
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200 "onclick="result('1')">1</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200 " onclick="result('2')">2</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="result('3')">3</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-pink-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="operator('+')">+</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="result('4')">4</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="result('5')">5</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200 "onclick="result('6')">6</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-pink-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="operator('*')">*</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclic="result('7')">7</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="result('8')">8</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200 " onclick="result('9')">9</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-pink-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="operator('-')">-</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-yellow-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="result('0')">0</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-pink-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="result('.')">.</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-pink-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200 " onclick="operator('/')">/</button>
+                <button class="p-4 bg-gradient-to-r from-teal-200 to-pink-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="calculateResult()">=</button>
+            </div>
+            <div class="flex justify-center mt-4">
+                <button class="p-4 w-full bg-gradient-to-r from-teal-200 to-pink-200 rounded-md shadow-xl text-xl font-bold hover:bg-violet-500 focus:outline-1 focus:outline-red-200" onclick="clearResult()">Clear</button>
+        
+    </div>
+
+        
+        
+
+   </div>
+  </body>
+</html>
